@@ -2,19 +2,19 @@
 (ac-config-default)
 
 ;; Start smartparens mode
-(smartparens-strict-mode)
+(smartparens-global-strict-mode)
 
 ;; Start undo-tree
 (global-undo-tree-mode)
 
 ;; Set up ace-jump-mode
-(autoload 'ace-jump-mode 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode
+  "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
 
-(autoload 'ace-jump-mode-pop-mark 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode-pop-mark
+  "ace-jump-mode"
   "Ace jump back:-"
   t)
 
