@@ -5,3 +5,10 @@
 
 ;; Maximize frame
 (toggle-frame-maximized)
+
+;; Theme
+(load-theme 'tangotango t)
+
+;; Initial message
+(setq inhibit-startup-screen "f")
+(setq initial-scratch-message "")
