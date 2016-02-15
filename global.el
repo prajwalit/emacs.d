@@ -1,5 +1,6 @@
 ;; Load default auto-complete configs
 (ac-config-default)
+(setq ac-comphist-file  (concat tmp-dir "ac-comphist.dat"))
 
 ;; Start smartparens mode
 (smartparens-global-strict-mode)
