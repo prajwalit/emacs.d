@@ -14,6 +14,6 @@
 
 ;; align on :
 (global-set-key (kbd "C-M-;")
-		(lambda (b e)
-		  (interactive "r")
-		  (align-regexp b e "\\(\\s-*\\):" 1 1)))
+                (lambda (b e)
+                  (interactive "r")
+                  (align-regexp b e "\\(\\s-*\\):" 1 1)))

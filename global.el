@@ -24,6 +24,8 @@
 ;; y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(setq-default indent-tabs-mode nil)
+
 ;; Setup ido-mode
 (ido-mode t)
 (setq ido-enable-prefix nil

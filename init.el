@@ -2,7 +2,7 @@
 (setq user-mail-address "contact@prajwalit.com")
 
 (setq root-dir (file-name-directory
-		(or (buffer-file-name) load-file-name)))
+                (or (buffer-file-name) load-file-name)))
 
 (setq config-dir (file-name-as-directory (concat root-dir "configs")))
 (setq tmp-dir (file-name-as-directory (concat root-dir "tmp")))
