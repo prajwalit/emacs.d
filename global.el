@@ -24,7 +24,11 @@
 ;; y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(setq-default indent-tabs-mode nil)
+
+(setq-default tab-width 4
+              standard-indent 4
+              indent-tabs-mode nil
+              show-trailing-whitespace t)
 
 ;; Setup ido-mode
 (ido-mode t)
