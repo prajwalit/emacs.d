@@ -21,6 +21,7 @@
     undo-tree
     auto-complete
     ace-jump-mode
+    yasnippet
     smex
 
     ;; Programming

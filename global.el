@@ -1,3 +1,5 @@
+(require 'yasnippet)
+
 ;; Load default auto-complete configs
 (ac-config-default)
 (setq ac-comphist-file  (concat tmp-dir "ac-comphist.dat"))
@@ -43,3 +45,9 @@
       desktop-files-not-to-save   "^$" ;reload tramp paths
       desktop-load-locked-desktop nil)
 (desktop-save-mode 1)
+
+
+;; Initialize yasnippets
+(yas/initialize)
+(setq yas/root-directory (concat root-dir "snippets"))
+(yas/load-directory yas/root-directory)

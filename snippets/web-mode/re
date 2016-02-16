@@ -1,0 +1,15 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: React class
+# --
+React.createClass ({
+  displayName: "$1",
+  mixins: [PureRenderMixin],
+  propTypes: {
+
+  },
+  render: function () {
+    return (
+      $0
+    );
+  }
+});
