@@ -21,6 +21,7 @@
     undo-tree
     auto-complete
     ace-jump-mode
+    smex
 
     ;; Programming
     web-mode

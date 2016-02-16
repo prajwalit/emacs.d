@@ -8,9 +8,12 @@
 (global-set-key (kbd "M-j") 'pop-to-mark-command)
 (global-set-key (kbd "<f5>") 'revert-buffer)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; align on :
 (global-set-key (kbd "C-M-;")
-                (lambda (b e)
-                  (interactive "r")
-                  (align-regexp b e "\\(\\s-*\\):" 1 1)))
+		(lambda (b e)
+		  (interactive "r")
+		  (align-regexp b e "\\(\\s-*\\):" 1 1)))
