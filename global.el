@@ -1,4 +1,5 @@
 (require 'yasnippet)
+(require 'smartparens-config)
 
 ;; Load default auto-complete configs
 (ac-config-default)
@@ -6,6 +7,7 @@
 
 ;; Start smartparens mode
 (smartparens-global-strict-mode)
+
 
 ;; Start undo-tree
 (global-undo-tree-mode)
