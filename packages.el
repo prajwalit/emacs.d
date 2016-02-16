@@ -4,7 +4,12 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
+	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-pinned-packages
+	     '(cider . "melpa-stable") t)
+
 
 (package-initialize)
 
@@ -16,11 +21,11 @@
     undo-tree
     auto-complete
     ace-jump-mode
-    cider
 
     ;; Programming
     web-mode
     clojure-mode
+    cider
 
     ;; Themes
     tangotango-theme) "Default packages")
