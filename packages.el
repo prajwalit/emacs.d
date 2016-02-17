@@ -16,6 +16,7 @@
 
 (defvar required-packages
   '(;; Tools
+    exec-path-from-shell
     magit
     smartparens
     undo-tree
