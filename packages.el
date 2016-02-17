@@ -28,6 +28,7 @@
     web-mode
     clojure-mode
     cider
+    markdown-mode
 
     ;; Themes
     tangotango-theme) "Default packages")
