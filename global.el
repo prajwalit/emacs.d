@@ -1,4 +1,5 @@
 (require 'yasnippet)
+(require 'git-gutter)
 (require 'smartparens-config)
 
 ;; Load default auto-complete configs
@@ -59,3 +60,11 @@
 (yas/initialize)
 (setq yas/root-directory (concat root-dir "snippets"))
 (yas/load-directory yas/root-directory)
+
+
+;; Initialize Git-gutter
+(global-git-gutter-mode t)
+(custom-set-variables
+ '(git-gutter:modified-sign "=")
+ '(git-gutter:added-sign "+")
+ '(git-gutter:deleted-sign "-"))

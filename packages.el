@@ -24,6 +24,7 @@
     ace-jump-mode
     yasnippet
     smex
+    git-gutter
 
     ;; Programming
     web-mode
