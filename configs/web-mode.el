@@ -1,4 +1,5 @@
 (require 'web-mode)
+(require 'smartparens-utils)
 
 (eval-after-load 'web-mode
   '(progn (setq web-mode-code-indent-offset 2)
@@ -32,3 +33,16 @@
 (add-to-list 'auto-mode-alist '("\\.scss$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+
+
+(sp-local-pair 'web-mode "(" nil
+               :pre-handlers '(spc-space-before-sexp)
+               :post-handlers '(spc-space-after-sexp))
+
+(sp-local-pair 'web-mode "{" nil
+               :pre-handlers '(spc-space-after-sexp-and-cparen)
+               :post-handlers '(space-after-sexp))
+
+(sp-local-pair 'web-mode "[" nil
+               :pre-handlers '(spc-space-after-sexp-and-cparen)
+               :post-handlers '(space-after-sexp))
