@@ -36,13 +36,13 @@
 
 
 (sp-local-pair 'web-mode "(" nil
-               :pre-handlers '(spc-space-before-sexp)
+               :pre-handlers '(spc-space-before-sexp-and-cparen)
                :post-handlers '(spc-space-after-sexp))
 
 (sp-local-pair 'web-mode "{" nil
-               :pre-handlers '(spc-space-after-sexp-and-cparen)
+               :pre-handlers '(spc-space-before-sexp-and-cparen)
                :post-handlers '(space-after-sexp))
 
 (sp-local-pair 'web-mode "[" nil
-               :pre-handlers '(spc-space-after-sexp-and-cparen)
+               :pre-handlers '(spc-space-before-sexp-and-cparen)
                :post-handlers '(space-after-sexp))

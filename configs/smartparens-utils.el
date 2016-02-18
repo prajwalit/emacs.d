@@ -10,7 +10,7 @@
         (insert " ")))))
 
 
-(defun spc-space-after-sexp-and-cparen (id action _context)
+(defun spc-space-before-sexp-and-cparen (id action _context)
   (when (eq action 'insert)
     (save-excursion
       (backward-char (length id))
