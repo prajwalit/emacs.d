@@ -1,3 +1,5 @@
+(require 'yasnippet)
+
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "M-g") 'goto-line)
 
@@ -20,6 +22,14 @@
 
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
+
+
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+;; Set Yasnippet's key binding to shift+tab and C-c e
+(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
+(define-key yas-minor-mode-map (kbd "C-c e") 'yas-expand)
+
 
 ;; align on :
 (global-set-key (kbd "C-M-;")
