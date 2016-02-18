@@ -1,4 +1,5 @@
 (require 'yasnippet)
+(require 'ace-jump-mode)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "M-g") 'goto-line)
@@ -23,6 +24,8 @@
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
