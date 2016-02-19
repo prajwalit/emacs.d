@@ -1,40 +1,54 @@
 (require 'yasnippet)
+(require 'smartparens)
 (require 'ace-jump-mode)
 
-(global-set-key (kbd "C-x g") 'magit-status)
-(global-set-key (kbd "M-g") 'goto-line)
+;; Revert
+(global-set-key (kbd "<f5>") 'revert-buffer)
 
+;; Jumping
+(global-set-key (kbd "M-g") 'goto-line)
+(global-set-key (kbd "M-j") 'pop-to-mark-command)
+
+;; Rgrep
+(global-set-key (kbd "M-R") 'rgrep)
+
+;; Manipulation
+(global-set-key (kbd "C-x ^") 'join-line)
+(global-set-key (kbd "C-M-h") 'backward-kill-word)
+(global-set-key (kbd "C-.") 'delete-region)
+
+;; Clipboard related
 (global-set-key (kbd "C-w") 'clipboard-kill-region)
 (global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-y") 'clipboard-yank)
 
-(global-set-key (kbd "M-R") 'rgrep)
-(global-set-key (kbd "C-x ^") 'join-line)
-(global-set-key (kbd "M-j") 'pop-to-mark-command)
+;; Magit
+(global-set-key (kbd "C-x g") 'magit-status)
 
-(global-set-key (kbd "<f5>") 'revert-buffer)
-
-(global-set-key (kbd "C-M-h") 'backward-kill-word)
-(global-set-key (kbd "C-.") 'delete-region)
-
+;; Smex bindings
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; Zooming
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
+;; Ace jump bindings
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
+;; Yas bindings
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
-;; Set Yasnippet's key binding to shift+tab and C-c e
-(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
+(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand) ;; shift+tab
 (define-key yas-minor-mode-map (kbd "C-c e") 'yas-expand)
 
+;; Smartparens
+(define-key smartparens-mode-map (kbd "C-M-<backspace>") 'sp-splice-sexp-killing-backward)
 
-;; align on :
+
+;; Alignment
 (global-set-key (kbd "C-M-;")
                 (lambda (b e)
                   (interactive "r")
