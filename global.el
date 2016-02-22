@@ -1,6 +1,7 @@
 (require 'yasnippet)
 (require 'git-gutter)
 (require 'smartparens-config)
+(require 'rich-minority)
 
 
 ;; Load default auto-complete configs
@@ -74,3 +75,13 @@
  '(git-gutter:modified-sign "=")
  '(git-gutter:added-sign "+")
  '(git-gutter:deleted-sign "-"))
+
+
+;; Rich minority mode
+(setq rm-blacklist '(" ARev"
+                     " AC"
+                     " GitGutter"
+                     " Undo-Tree"
+                     " SP/s"
+                     " yas"))
+(rich-minority-mode 1)

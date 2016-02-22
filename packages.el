@@ -25,6 +25,7 @@
     yasnippet
     smex
     git-gutter
+    rich-minority
 
     ;; Programming
     web-mode
