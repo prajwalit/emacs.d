@@ -2,6 +2,7 @@
 (require 'git-gutter)
 (require 'smartparens-config)
 (require 'rich-minority)
+(require 'smooth-scroll)
 
 
 ;; Load default auto-complete configs
@@ -77,7 +78,7 @@
  '(git-gutter:deleted-sign "-"))
 
 
-;; Rich minority mode
+;; Set rich minority mode
 (setq rm-blacklist '(" ARev"
                      " AC"
                      " GitGutter"
@@ -85,3 +86,10 @@
                      " SP/s"
                      " yas"))
 (rich-minority-mode 1)
+
+
+;; Start smooth-scrolling
+(smooth-scroll-mode t)
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
+(setq scroll-step 1)

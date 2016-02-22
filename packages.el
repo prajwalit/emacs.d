@@ -26,6 +26,7 @@
     smex
     git-gutter
     rich-minority
+    smooth-scroll
 
     ;; Programming
     web-mode
