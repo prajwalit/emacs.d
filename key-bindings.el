@@ -53,3 +53,6 @@
                 (lambda (b e)
                   (interactive "r")
                   (align-regexp b e "\\(\\s-*\\):" 1 1)))
+
+;; Switch to the most recently selected buffer
+(global-set-key (kbd "M-`") 'mode-line-other-buffer)
