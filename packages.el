@@ -28,6 +28,7 @@
     rich-minority
     smooth-scroll
     scratch
+    idle-highlight-mode
 
     ;; Programming
     web-mode
