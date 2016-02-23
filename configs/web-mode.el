@@ -1,5 +1,6 @@
 (require 'web-mode)
 (require 'smartparens-utils)
+(require 'idle-highlight-mode)
 
 (eval-after-load 'web-mode
   '(progn (setq web-mode-code-indent-offset 2)
@@ -23,8 +24,8 @@
         '(("css" . (ac-source-words-in-buffer ac-source-css-property))
           ("html" . (ac-source-words-in-buffer ac-source-abbrev))
           ("jsx" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers))
-          ("js" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers)))))
-
+          ("js" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers))))
+  (idle-highlight-mode t))
 
 (add-hook 'web-mode-hook 'web-mode-hook)
 
