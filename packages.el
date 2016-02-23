@@ -27,6 +27,7 @@
     git-gutter
     rich-minority
     smooth-scroll
+    scratch
 
     ;; Programming
     web-mode
