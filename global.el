@@ -84,6 +84,7 @@
                      " GitGutter"
                      " Undo-Tree"
                      " SP/s"
+                     " SScr"
                      " yas"))
 (rich-minority-mode 1)
 
