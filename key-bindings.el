@@ -1,6 +1,7 @@
 (require 'yasnippet)
 (require 'smartparens)
 (require 'ace-jump-mode)
+(require 'neotree)
 
 ;; Revert
 (global-set-key (kbd "<f5>") 'revert-buffer)
@@ -47,7 +48,6 @@
 ;; Smartparens
 (define-key smartparens-mode-map (kbd "C-M-<backspace>") 'sp-splice-sexp-killing-backward)
 
-
 ;; Alignment
 (global-set-key (kbd "C-M-;")
                 (lambda (b e)
@@ -56,3 +56,6 @@
 
 ;; Switch to the most recently selected buffer
 (global-set-key (kbd "M-`") 'mode-line-other-buffer)
+
+;; Neotree
+(global-set-key (kbd "M-]") 'neotree-toggle)

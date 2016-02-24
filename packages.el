@@ -29,6 +29,7 @@
     smooth-scroll
     scratch
     idle-highlight-mode
+    neotree
 
     ;; Programming
     web-mode
