@@ -79,14 +79,14 @@
 
 
 ;; Set rich minority mode
-(setq rm-blacklist '(" ARev"
-                     " AC"
-                     " GitGutter"
-                     " Undo-Tree"
-                     " SP/s"
-                     " SScr"
-                     " yas"))
-(rich-minority-mode 1)
+;; (setq rm-blacklist '(" ARev"
+;;                      " AC"
+;;                      " GitGutter"
+;;                      " Undo-Tree"
+;;                      " SP/s"
+;;                      " SScr"
+;;                      " yas"))
+;; (rich-minority-mode 1)
 
 
 ;; Start smooth-scrolling
