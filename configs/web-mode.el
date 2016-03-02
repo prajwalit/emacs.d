@@ -1,4 +1,5 @@
 (require 'web-mode)
+(require 'smartparens)
 (require 'smartparens-utils)
 (require 'idle-highlight-mode)
 
@@ -25,7 +26,8 @@
           ("html" . (ac-source-words-in-buffer ac-source-abbrev))
           ("jsx" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers))
           ("js" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers))))
-  (idle-highlight-mode t))
+  (idle-highlight-mode t)
+  (sp-local-pair 'web-mode "<" nil :actions :rem))
 
 (add-hook 'web-mode-hook 'web-mode-hook)
 
