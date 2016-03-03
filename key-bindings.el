@@ -59,3 +59,6 @@
 
 ;; Neotree
 (global-set-key (kbd "M-]") 'neotree-toggle)
+
+;; Scratch
+(global-set-key (kbd "C-x t") 'scratch)
