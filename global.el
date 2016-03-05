@@ -3,6 +3,7 @@
 (require 'smartparens-config)
 (require 'rich-minority)
 (require 'smooth-scroll)
+(require 'deft)
 
 
 ;; Load default auto-complete configs
@@ -98,3 +99,10 @@
 
 ;; Mode-specific scratch buffers
 (autoload 'scratch "scratch" nil t)
+
+;; Deft
+(setq deft-default-extension "md"
+      deft-extensions '("md" "org" "txt")
+      deft-directory "~/Google Drive/notes")
+(unless (file-exists-p deft-directory)
+  (make-directory deft-directory))

@@ -62,3 +62,6 @@
 
 ;; Scratch
 (global-set-key (kbd "C-x t") 'scratch)
+
+;; Deft
+(global-set-key (kbd "C-x /") 'deft)
