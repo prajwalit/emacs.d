@@ -65,3 +65,4 @@
 
 ;; Deft
 (global-set-key (kbd "C-x /") 'deft)
+(global-set-key (kbd "C-x m") 'deft-new-file-named)

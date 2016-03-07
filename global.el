@@ -103,6 +103,7 @@
 ;; Deft
 (setq deft-default-extension "md"
       deft-extensions '("md" "org" "txt")
-      deft-directory "~/Google Drive/notes")
+      deft-directory "~/Google Drive/notes"
+      deft-auto-save-interval 0)
 (unless (file-exists-p deft-directory)
   (make-directory deft-directory))
