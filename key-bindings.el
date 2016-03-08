@@ -32,12 +32,16 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Zooming
-(define-key global-map (kbd "C-+") 'text-scale-increase)
-(define-key global-map (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; Open in other window
+(global-set-key (kbd "C-c f") 'find-file-other-window)
+(global-set-key (kbd "C-c b") 'view-buffer-other-window)
 
 ;; Ace jump bindings
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
+(global-set-key (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 ;; Yas bindings
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
