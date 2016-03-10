@@ -49,3 +49,21 @@
     (when new-kill-string
       (message "%s copied" new-kill-string)
       (kill-new new-kill-string))))
+
+
+(defun revert-all-buffers ()
+  "Refresh all open buffers from their respective files"
+  (interactive)
+  (let* ((list (buffer-list))
+         (buffer (car list)))
+    (while buffer
+      (if (string-match "\\*" (buffer-name buffer))
+          (progn
+            (setq list (cdr list))
+            (setq buffer (car list)))
+        (progn
+          (set-buffer buffer)
+          (revert-buffer t t t)
+          (setq list (cdr list))
+          (setq buffer (car list))))))
+  (message "Refreshing open files"))
