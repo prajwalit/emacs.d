@@ -70,3 +70,6 @@
 ;; Deft
 (global-set-key (kbd "C-x /") 'deft)
 (global-set-key (kbd "C-x m") 'deft-new-file-named)
+
+;; Kill entire line cursor is on
+(global-set-key (kbd "C-S-k") 'kill-whole-line)
