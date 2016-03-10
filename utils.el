@@ -67,3 +67,14 @@
           (setq list (cdr list))
           (setq buffer (car list))))))
   (message "Refreshing open files"))
+
+
+(defun refer-window ()
+  "Clear other windows, split current window vertically
+ and set focus in the new frame"
+  (interactive)
+  (let ((num (window-number)))
+    (delete-other-windows)
+    (split-window-horizontally)
+    (when (equal num (window-number))
+      (other-window 1))))

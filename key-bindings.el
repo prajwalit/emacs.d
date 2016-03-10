@@ -70,3 +70,6 @@
 ;; Deft
 (global-set-key (kbd "C-x /") 'deft)
 (global-set-key (kbd "C-x m") 'deft-new-file-named)
+
+;; Open reference window
+(global-set-key (kbd "C-x C-1") 'refer-window)
