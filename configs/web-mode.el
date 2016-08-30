@@ -4,11 +4,12 @@
 (require 'idle-highlight-mode)
 
 (eval-after-load 'web-mode
-  '(progn (setq web-mode-code-indent-offset 2)
-          (setq web-mode-markup-indent-offset 2)
-          (setq web-mode-indent-style 2)
-          (setq web-mode-enable-auto-quoting nil)
-          (setq web-mode-enable-auto-closing nil)
+  '(progn (setq web-mode-code-indent-offset 2
+                web-mode-css-indent-offset 2
+                web-mode-markup-indent-offset 2
+                web-mode-indent-style 2
+                web-mode-enable-auto-quoting nil
+                web-mode-enable-auto-closing nil)
           (font-lock-add-keywords
            'web-mode `(("\\(function\s\\)("
                         (0 (progn (compose-region (match-beginning 1)
